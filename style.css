@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+--branco: #f1faeeff;
+--azul-claro: #a8dadcff;
+--azul: #457b9dff;
+--marinho: #1d3557ff;
+--fonte-texto:"Bahianita", sans-serif;
+--fonte-titulo: "Londrina Solid", sans-serif;
+}
