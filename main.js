@@ -7,52 +7,82 @@ const perguntas = [
     {
         enunciado: "Ryan é um garotinho de 4 anos, que possui autismo moderado (Nível 2), e sua mãe está a procura de uma escolhinha para matricula-lô. Você acha que ele deveria ser matriculado em uma escola de ensino regular ou em uma escola especializada em educação para crianças autistas?",
         alternativa: [
-            "Ryan deve ser matriculado em uma escola especializada em educação para crianças que possuem autismo, para que suas necesidades sejam atendidas corretamente.",
-            "Ryan deve ser matriculado em uma escola de ensino regular, pois ele é uma criança como qualquer outra."
+            {
+            texto:"Ryan deve ser matriculado em uma escola especializada em educação para crianças que possuem autismo, para que suas necesidades sejam atendidas corretamente.",
+            afirmacao:""
+            },
+            {
+            texto:"Ryan deve ser matriculado em uma escola de ensino regular, pois ele é uma criança como qualquer outra.",
+            afirmacao:""
+            }
         ]
     },
     {
         enunciado: "Ryan completou 12 anos e sua mãe percebeu que ele tinha uma boa audição e gostava de escutar música, decidiu colocá-lo em uma escola de música, que instrumento Ryan deveria tocar?",
         alternativa: [
-            "Flauta, pois é o instrumento favorito de Ryan, mas ele tem bastante dificuldade para tocar.",
-            "Piano, pois ele tem facilidade em tocar, porém não é seu intrumento favorito."
+            {
+            texto:"Flauta, pois é o instrumento favorito de Ryan, mas ele tem bastante dificuldade para tocar.",
+            afirmacao:""
+            },
+            {
+            texto:"Piano, pois ele tem facilidade em tocar, porém não é seu intrumento favorito.",
+            afirmacao:""
+            }
         ]
     },
     {
         enunciado: "Com 19 anos, Ryan conheceu Isadora, uma garota muito bondoza que cuidava de crianças autistas, Ryan queria chamâ-la para sair, mas seus amigos disseram que não uma boa ideia, o que Ryan deve fazer?",
         alternativa: [
-            "Alternativa 01",
-            "Alternativa 02"
+                {
+                texto:"A3",
+                afirmacao:""
+                },
+                {
+                texto:"A3",
+                afirmacao:""
+                }
         ]
     },
     {
         enunciado: "Pergunta 04",
         alternativa: [
-            "Alternativa 01",
-            "Alternativa 02"
+                {
+                texto:"A4",
+                afirmacao:""
+                },
+                {
+                texto:"A4",
+                afirmacao:""
+                }
         ]
     },
     {
         enunciado: "Pergunta 05",
         alternativa: [
-            "Alternativa 01",
-            "Alternativa 02"
+                {
+                texto:"A5",
+                afirmacao:""
+                },
+                {
+                texto:"A5",
+                afirmacao:""
+                }
         ]
     },
 ]
 
 let atual = 0;
 let perguntaAtual;
-let historiaFinal = "";
+let historiaFinal = " ";
 
-function mostraPergunta(){
+function mostrarPerguntas(){
     if(atual >= perguntas.length){
         mostraResultado();
         return;
     }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternativas.textContent = "";
+    caixaAlternativas.textContent = " ";
     mostraAlternativas();
 }
 
@@ -66,15 +96,17 @@ function mostraAlternativas(){
 
 }
 
-function respostaSelecionada(opcaoselecionada){
+function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = opcaoSelecionada.afirmacao;
-    historiaFinal += afirmacoes + "";
+    historiaFinal += afirmacoes + " ";
     atual++;
-    mostraPergunta();
+    mostrarPerguntas();
 }
 
 function mostraResultado (){
-    caixaPerguntas.textContent = "Aqui vai um texto"
+    caixaPerguntas.textContent = "Início do texto"
     textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
+    caixaAlternativas.textContent = " ";
 }
+
+mostrarPerguntas();
