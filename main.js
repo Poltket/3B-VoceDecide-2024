@@ -6,14 +6,14 @@ const textoResultado = document.querySelector('.texto-resultado');
 
 const perguntas = [
     {
-        enunciado: "A1",
+        enunciado: " Ryan é um garotinho de 4 anos, que possui autismo moderado (Nível 2), e sua mãe está a procura de uma escolinha para matriculá-lo. Você acha que ele deveria ser matriculado em uma escola de ensino regular ou em uma escola especializada em educação para crianças autistas?",
         alternativas: [
             {
-                texto:"alternativa 01",
+                texto:" Ryan deve ser matriculado em uma escola especializada em educação de crianças que possuem autismo, para que suas necessidades sejam atendidas corrente.",
                 afirmacao: "resultado 01"
             },
             {
-                texto:"alternativa 02",
+                texto:" Ryan deve ser matriculado em uma escola de ensino regular, pois ele é uma criança como qualquer outra.",
                 afirmacao: "resultado 02"
             }   
         ]
@@ -45,28 +45,15 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Paado alguns anos",
+        enunciado: "Passado alguns anos, Ryan se aprofundou nos estudos sobre autismo e com 25 anos foi chamado para palestrar sobre autismo e educação inclusiva, essa palestra poderia mudar o rumo de sua vida. Você acha que Ryan deve ir palestrar ou não?",
         alternativas: [
             {
-                texto: "alternativa 07",
+                texto: "Sim, se é algo que pode mudar a vida dele para melhor, ele deve correr atrás.",
                 afirmacao: "resultado 07"
             },
             {
-                texto: "alternativa 08",
+                texto: " Não, uma simples palestra não pode mudar a vida de ninguém.",
                 afirmacao: "resultado 08"
-            }
-        ]
-    },
-    {
-        enunciado: "Enunciado 05",
-        alternativas: [
-            {
-                texto: "alternativa 09",
-                afirmacao: "resultado 09"
-            },
-            {
-                texto: "alternativa 10",
-                afirmacao: "resultado 10"
             }
         ]
     },
