@@ -10,11 +10,11 @@ const perguntas = [
         alternativas: [
             {
                 texto:" Ryan deve ser matriculado em uma escola especializada em educação de crianças que possuem autismo, para que suas necessidades sejam atendidas corrente.",
-                afirmacao: "resultado 01"
+                afirmacao: "Ryan foi matriculado em uma escola especializada em educação para crianças que possuem autismo e se adaptou muito bem."
             },
             {
                 texto:" Ryan deve ser matriculado em uma escola de ensino regular, pois ele é uma criança como qualquer outra.",
-                afirmacao: "resultado 02"
+                afirmacao: "Ryan foi matriculado em uma escola de ensino regular, sua adaptação foi um pouco demorada, porém, ocorreu muito bem."
             }   
         ]
     },
@@ -23,11 +23,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Flauta, pois é o instrumento favorito Ryan, mas ele tem bastante dificuldade em tocar.",
-                afirmacao: "resultado03"
+                afirmacao: "Com 12 anos ele foi colocado em uma escola de música e começou a tocar flauta, e mesmo com muita dificuldade no aprendizado ele não desistiu."
             },
             {
                 texto: "Piano, pois ele tem facilidade em tocar, porém não é seu instrumento favorito.",
-                afirmacao: "resultado 04"
+                afirmacao: "Com 12 anos ele começou a participar da aulas de piano, ele tocava muito bem, porém, não era o instrumento que ele gostaria de tocar."
             }
         ]
     },
@@ -36,11 +36,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Ryan não deve ouvir seus amigos e deve chamá-la para sair já que gosta dela.",
-                afirmacao: "resultado 05"
+                afirmacao: "Passado alguns anos, quando Ryan completou 19 anos resolveu chamar a garota que conheceu para sair, ele se entendiam muito bem e passaram um ótimo dia juntos."
             },
             {
                 texto: "Ryan deve ouvir seu amigos e não chamá-la para sair.",
-                afirmacao: "resultado 06"
+                afirmacao: "Passado alguns anos, Ryan ouviu seus amigos e decidiu não chamar a garota que conheceu para sair, ele acreditou que não era o momento certo para se relacionar com alguém. "
             }
         ]
     },
@@ -49,11 +49,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Sim, se é algo que pode mudar a vida dele para melhor, ele deve correr atrás.",
-                afirmacao: "resultado 07"
+                afirmacao: "Com 25 anos, ele aceitou a proposta para palestrar sobre o autismo e educação inclusiva, com isso, ele recebeu novas propostas que fizeram sua carreira profissional e individual subir cada vez mais alto. "
             },
             {
                 texto: " Não, uma simples palestra não pode mudar a vida de ninguém.",
-                afirmacao: "resultado 08"
+                afirmacao: "Com 25 anos, Ryan rejeitou a proposta para palestrar sobre o austimo e a educação inclusiva, por seu uma pessoa autista ele não acreditava em si mesmo, e que poderia ter capacidade para enfrentar novos desafios e oportunidades."
             }
         ]
     },
@@ -91,7 +91,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = " Inicio do texto... "
+    caixaPerguntas.textContent = " Sendo assim... "
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }

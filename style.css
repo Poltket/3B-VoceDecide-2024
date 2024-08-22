@@ -7,6 +7,7 @@
 
 :root{
 
+--azul-esc:var(#fff6a4);
 --branco: rgb(3, 0, 0);
 --azul-claro: #a8dadcff;
 --azul: #457b9dff;
@@ -22,7 +23,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: var(--fonte-texto)
+    font-family: var(--fonte-texto);
+    font-family: var(--fonte-titulo);
 }
 
 .caixa-principal{
@@ -35,7 +37,13 @@ body{
 
 .titulo{
     color: var(--azul);
-    font-family: var(--branco)
+    font-family: var(--branco);
+    font-family: var(--fonte-titulo);
+
+}
+
+.texto{
+    font-family: var(--fonte-titulo);
 }
 
 button{
@@ -49,5 +57,5 @@ button{
 }
 
 button:hover{
-    background-color: var(--azul);
+    background-color: var(--marinho);
 }
